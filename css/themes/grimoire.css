@@ -1,0 +1,170 @@
+/* Theme C: "The Living Grimoire". Parchment pages with gold double rules on dark leather and night ink,
+   violet ink lettering, leather bookmark tabs for the menu: the same look as the game's menus
+   (GrimUI: page.png, divider.png, ribbon.png, Cinzel + Cormorant Garamond). */
+
+:root {
+  --bg: #120b16; --bg2: #1d1222; --text: #eadcbc; --muted: #b9a684; --head: #f6e7c1; --accent: #e9bd5f; --accent-ink: #2b1640;
+  --gold: #e9bd5f; --gold-hi: #ffe08f; --gold-dim: #a8803d;
+  --ink: #452a6b; --ink-soft: #6b5488; --codex: #5c3894; --page: #f5ebd1; --page-shade: #ddcca8;
+  --card: #f5ebd1; --card-border: #c9b083; --link: #e9bd5f; --radius: 4px; --field-bg: #fffaf0;
+  --r0: #514c4c; --r1: #1f7a1f; --r2: #1a4db8; --r3: #7524b3; --r4: #b87305;
+  --hero-img: url("../../img/shots/sunset.jpg"); --hero-pos: center 30%;
+}
+
+body {
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(1200px 600px at 50% -10%, rgba(120, 70, 170, .28), transparent 70%),
+    radial-gradient(900px 700px at 100% 40%, rgba(90, 40, 60, .25), transparent 70%),
+    radial-gradient(800px 600px at 0% 80%, rgba(60, 40, 110, .25), transparent 70%),
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, .012) 0 2px, transparent 2px 6px);
+}
+
+/* parchment page: the game's 9-slice page.png */
+.page, .feature, .news-card, .panel, .wiki-entry, .wiki-side, .facts, .hero-copy {
+  border-style: solid; border-color: transparent; border-width: 34px;
+  border-image: url("../../img/page.png") 64 fill / 34px stretch;
+  color: var(--ink); --text: var(--ink); --muted: var(--ink-soft); --head: var(--ink); --link: var(--codex); --card-border: #cdb68a;
+  filter: drop-shadow(0 14px 26px rgba(0, 0, 0, .55));
+}
+
+/* ---------------------------------------------------------------- header: leather tabs */
+.site-header { background: linear-gradient(#1b1020, #140b18); border-bottom: 2px solid var(--gold-dim);
+  box-shadow: 0 2px 0 rgba(233, 189, 95, .25), 0 10px 30px rgba(0, 0, 0, .5); }
+.brand span { color: var(--gold); text-shadow: 0 0 12px rgba(233, 189, 95, .35); }
+.nav { align-self: flex-end; gap: 6px; }
+.nav a { color: #fbe6b2; border-radius: 10px 10px 0 0; padding: 12px 18px 10px; border: 1px solid rgba(233, 189, 95, .55); border-bottom: none;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15); font-size: 14px; transition: padding .15s, background .15s; }
+.nav a:nth-child(1) { background: linear-gradient(#6c3a9c, #4b2570); }
+.nav a:nth-child(2) { background: linear-gradient(#9c2b35, #6d1a22); }
+.nav a:nth-child(3) { background: linear-gradient(#2f6d64, #1d4a44); }
+.nav a:nth-child(4) { background: linear-gradient(#b8892f, #8a6220); color: #2b1640; }
+.nav a:hover, .nav a[aria-current="page"] { padding-top: 16px; color: #fff4d0; }
+.nav a:nth-child(4):hover, .nav a:nth-child(4)[aria-current="page"] { color: #1b0e28; }
+.nav a[aria-current="page"] { box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25), 0 0 0 2px rgba(255, 224, 143, .5); }
+.nav-toggle { border-color: var(--gold-dim); color: var(--gold); }
+
+/* ---------------------------------------------------------------- buttons: violet ribbon, gold letters */
+.btn { border-radius: 3px; }
+.btn-primary { background: linear-gradient(#6a43a6, #43266e); color: var(--gold-hi); border: 2px solid var(--gold);
+  box-shadow: 0 0 0 3px rgba(43, 22, 64, .9), 0 0 22px rgba(233, 189, 95, .35); text-shadow: 0 1px 0 #1a0c28; }
+.btn-primary:hover { background: linear-gradient(#7c52bd, #4e2d80); box-shadow: 0 0 0 3px rgba(43, 22, 64, .9), 0 0 30px rgba(255, 224, 143, .55); }
+.btn-ghost { color: var(--ink); border: 1px solid var(--gold-dim); background: rgba(69, 42, 107, .06); }
+.btn-ghost:hover { background: var(--codex); color: var(--gold-hi); border-color: var(--gold); }
+.cta-band .btn-ghost, .gallery-section .btn-ghost { color: var(--gold); border-color: var(--gold-dim); }
+
+/* ---------------------------------------------------------------- hero: an open book */
+.hero { padding: 54px 0 70px; }
+.hero-art { background-image: var(--hero-img); position: absolute; inset: 0; filter: blur(6px) saturate(1.1); transform: scale(1.06); opacity: .55; }
+.hero-shade { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 45%, rgba(18, 11, 22, .25), rgba(18, 11, 22, .95) 75%),
+  linear-gradient(transparent 60%, var(--bg)); z-index: 1; }
+.hero-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 0; align-items: stretch; max-width: 1240px; }
+.hero-copy { padding: 22px 34px 26px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  border-image-width: 34px; border-right-width: 18px; position: relative; }
+.hero-copy::after { content: ""; position: absolute; top: -20px; bottom: -20px; right: -18px; width: 26px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(70, 45, 20, .35)); pointer-events: none; }
+.hero-logo { width: min(470px, 100%); filter: drop-shadow(0 4px 6px rgba(80, 50, 10, .35)); }
+.hero-copy .kicker { color: var(--codex); margin: 6px 0 4px; }
+.hero-copy .kicker::before, .hero-copy .kicker::after { content: " \2726 "; color: var(--gold-dim); }
+.hero-copy .tagline { color: var(--ink); font-size: 22px; font-weight: 600; }
+.hero-copy .cta-row { justify-content: center; margin: 14px 0 12px; }
+.hero-copy .meta-row { justify-content: center; color: var(--ink-soft); font-size: 15px; }
+.hero-copy .meta-row li + li::before { content: "\2726"; margin-right: 18px; color: var(--gold-dim); }
+.hero-plate { margin: 0; position: relative; border-style: solid; border-color: transparent; border-width: 34px 34px 34px 18px;
+  border-image: url("../../img/page.png") 64 fill / 34px stretch; filter: drop-shadow(0 14px 26px rgba(0, 0, 0, .55)); display: flex; }
+.hero-plate-img { flex: 1; min-height: 420px; background: var(--hero-img) var(--hero-pos) / cover;
+  border: 3px double var(--gold-dim); outline: 1px solid var(--gold); outline-offset: 4px; box-shadow: inset 0 0 40px rgba(40, 20, 0, .35); }
+.hero-plate::after { content: "The Royal Capital at dusk"; position: absolute; bottom: -26px; left: 0; right: 0; text-align: center;
+  font-style: italic; color: var(--ink-soft); font-size: 16px; }
+
+/* ---------------------------------------------------------------- facts: wax seals on a page strip */
+.facts-section { padding: 10px 0 40px; }
+.facts { padding: 10px 6px; }
+.fact { position: relative; }
+.fact b { width: 76px; height: 76px; margin: 0 auto 10px; border-radius: 50%; display: grid; place-items: center; font-size: 34px;
+  color: var(--gold-hi); background: radial-gradient(circle at 35% 30%, #8e5ccc, #4a2675 70%); border: 2px solid var(--gold);
+  box-shadow: 0 0 0 4px rgba(233, 189, 95, .25), 0 4px 10px rgba(40, 10, 60, .4); text-shadow: 0 1px 0 #1a0c28; }
+.fact span { color: var(--ink); font-weight: 600; }
+.fact + .fact::before { content: ""; position: absolute; left: -9px; top: 20%; bottom: 20%; border-left: 1px solid var(--gold-dim); opacity: .6; }
+
+/* ---------------------------------------------------------------- section heads with the gold divider */
+.section-head { text-align: center; }
+.section-head p { margin: 0 auto; }
+.section-head h2 { color: var(--gold); text-shadow: 0 0 18px rgba(233, 189, 95, .25); }
+.section-head h2::after { content: ""; display: block; height: 22px; margin: 12px auto 0; width: min(420px, 90%);
+  background: url("../../img/divider.png") center / contain no-repeat; }
+.section-head .kicker { color: #c9a6ff; }
+
+/* ---------------------------------------------------------------- features: chapters on pages */
+.features { gap: 34px; }
+.feature { padding: 10px 14px; }
+.feature-img img { border: 3px double var(--gold-dim); outline: 1px solid var(--gold); outline-offset: 3px; }
+.feature-copy h3 { color: var(--ink); }
+.feature-copy .kicker { color: #8a2b38; }
+.feature-copy p:not(.kicker) { font-size: 20px; font-weight: 600; }
+.feature-copy p:not(.kicker)::first-letter { font-family: var(--font-head); font-size: 3.1em; float: left; line-height: .82; margin: 6px 4px 0 0;
+  color: var(--codex); text-shadow: 1px 1px 0 var(--gold); }
+
+/* ---------------------------------------------------------------- gallery: framed plates */
+.gallery-track img { border: 2px solid var(--gold-dim); outline: 1px solid rgba(233, 189, 95, .5); outline-offset: 4px; }
+.gallery-track figcaption { color: var(--muted); font-style: italic; text-align: center; }
+.gallery-btn { background: linear-gradient(#6a43a6, #43266e); color: var(--gold-hi); border: 2px solid var(--gold); }
+
+/* ---------------------------------------------------------------- news: codex entries */
+.news-card .tag { align-self: flex-start; color: var(--gold-hi); background: url("../../img/ribbon.png") left center / 100% 100% no-repeat;
+  padding: 5px 30px 5px 12px; margin-bottom: 6px; }
+.news-card.is-patch .tag { filter: hue-rotate(-40deg) saturate(1.2); }
+.news-card h3 { color: var(--ink); }
+.news-card details summary { color: var(--codex); }
+
+/* ---------------------------------------------------------------- CTA + footer */
+.cta-band { background: radial-gradient(ellipse at 50% 40%, rgba(120, 70, 190, .35), transparent 65%); }
+.cta-band h2 { color: var(--gold); }
+.cta-emblem { margin: 0 auto 12px; filter: drop-shadow(0 0 22px rgba(255, 210, 120, .6)); }
+.site-footer { border-top: 1px solid rgba(233, 189, 95, .35); color: var(--muted); background: #0d0810; }
+.site-footer a { color: var(--gold); }
+
+/* ---------------------------------------------------------------- inner pages */
+.page-head h1 { color: var(--gold); }
+.page-head h1::after { content: ""; display: block; height: 22px; margin-top: 10px; width: min(420px, 90%); background: url("../../img/divider.png") left center / contain no-repeat; }
+.note { background: rgba(69, 42, 107, .07); }
+.form input, .form textarea, .form select { color: #2a1a40; border-color: #c4aa7d; }
+.type-pick label:has(input:checked) { background: var(--codex); color: var(--gold-hi); border-color: var(--gold); }
+.status.ok { background: #e3f1d9; color: #1d4d16; border: 1px solid #8bbb73; }
+.status.warn { background: #fbefd0; color: #5b3f08; border: 1px solid #d6b15c; }
+.status.err { background: #f6dada; color: #6b1a1a; border: 1px solid #c87a7a; }
+.wiki-cats a { color: var(--ink); }
+.wiki-cats a:hover, .wiki-cats a.on { background: var(--codex); color: var(--gold-hi); }
+.wiki-card { background: #fbf4e2; border: 1px solid #d3bd8f; border-radius: 3px; box-shadow: 0 2px 0 #d9c49a; color: var(--ink); }
+.wiki-card:hover { border-color: var(--gold-dim); box-shadow: 0 0 0 2px rgba(233, 189, 95, .6); }
+.wiki-card span { color: var(--ink-soft); }
+.wiki-main > .wiki-list { border-style: solid; border-color: transparent; border-width: 34px; border-image: url("../../img/page.png") 64 fill / 34px stretch;
+  color: var(--ink); --muted: var(--ink-soft); --head: var(--ink); --link: var(--codex); --card-border: #cdb68a; }
+.wiki-list h2 { color: var(--ink); }
+.wsec h2 { color: var(--codex); border-bottom: 1px solid var(--gold-dim); padding-bottom: 4px; }
+.spoiler-box { background: repeating-linear-gradient(45deg, rgba(69, 42, 107, .05) 0 8px, transparent 8px 16px); }
+
+/* trailer plate and community pages */
+.trailer-frame { border: 3px double var(--gold-dim); outline: 1px solid var(--gold); outline-offset: 5px; box-shadow: 0 20px 40px rgba(0, 0, 0, .6); }
+.trailer-play { background: linear-gradient(#6a43a6, #43266e); border-color: var(--gold); color: var(--gold-hi); box-shadow: 0 0 30px rgba(233, 189, 95, .5); }
+.trailer-badge { background: rgba(43, 22, 64, .88); color: var(--gold-hi); border: 1px solid var(--gold-dim); }
+.community-card h3 { color: var(--ink); }
+.news-card.is-devlog .tag { filter: hue-rotate(110deg) saturate(.9); }
+
+@media (max-width: 900px) {
+  .hero { padding: 24px 0 50px; }
+  .hero-inner { grid-template-columns: 1fr; gap: 26px; }
+  .hero-copy { border-right-width: 34px; padding: 6px 4px 10px; }
+  .hero-copy::after { display: none; }
+  .hero-plate { border-left-width: 34px; }
+  .hero-plate-img { min-height: 220px; }
+  .fact + .fact::before { display: none; }
+}
+@media (max-width: 720px) {
+  .page, .feature, .news-card, .panel, .wiki-entry, .wiki-side, .facts, .hero-copy, .hero-plate, .wiki-main > .wiki-list { border-width: 22px; border-image-width: 22px; }
+  .nav a { border-radius: 8px; border-bottom: 1px solid rgba(233, 189, 95, .55); }
+  .nav a:hover, .nav a[aria-current="page"] { padding-top: 12px; }
+  .hero-copy .tagline { font-size: 19px; }
+  .fact b { width: 62px; height: 62px; font-size: 28px; }
+  .hero-plate::after { display: none; }
+}

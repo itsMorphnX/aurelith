@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suggestions &amp; Bugs · Aurelith</title>
+<meta name="description" content="Send a suggestion, a bug report or a crash report to the Aurelith team.">
+<meta property="og:title" content="Aurelith: The Unwritten Chapter">
+<meta property="og:description" content="A grimoire-magic action RPG. Solo with an AI crew or co-op with up to four players.">
+<meta property="og:image" content="img/shots/sunset.jpg">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/theme.css" id="theme-css">
+</head>
+<body class="page-report">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="img/emblem.png" alt=""><span>Aurelith</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="wiki.html">Wiki</a>
+      <a href="report.html" aria-current="page">Suggestions &amp; Bugs</a>
+      <a href="download.html" class="nav-cta">Download</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap">
+  <header class="page-head">
+    <p class="kicker">Write in the margins</p>
+    <h1>Suggestions &amp; Bugs</h1>
+    <p>Found a bug, hit a crash, or have an idea for the book? Tell us here. Every report goes straight to the team's channel.</p>
+  </header>
+  <div class="grid-2 report-grid" style="padding-bottom:70px;align-items:start">
+    <form class="form panel" id="report-form" novalidate>
+      <fieldset class="type-pick">
+        <legend>What is it?</legend>
+        <label><input type="radio" name="type" value="suggestion" checked> Suggestion</label>
+        <label><input type="radio" name="type" value="bug"> Bug</label>
+        <label><input type="radio" name="type" value="crash"> Crash</label>
+      </fieldset>
+      <label>Title <input name="title" required maxlength="120" placeholder="One line: what happened, or your idea"></label>
+      <label>Details <span class="hint">What did you see? What did you expect?</span>
+        <textarea name="details" required maxlength="3500"></textarea></label>
+      <label class="for-bug">Steps to make it happen again <span class="hint">1. Go to... 2. Press... (optional)</span>
+        <textarea name="steps" maxlength="2000" style="min-height:90px"></textarea></label>
+      <div class="grid-2" style="gap:16px">
+        <label>Game version <span class="hint">Shown in the launcher, bottom left</span><input name="version" maxlength="40" placeholder="e.g. 0.1.0"></label>
+        <label>Your name <span class="hint">Optional</span><input name="name" maxlength="60" placeholder="Anonymous"></label>
+      </div>
+      <label class="sr-only" aria-hidden="true">Leave empty <input name="website" tabindex="-1" autocomplete="off"></label>
+      <button class="btn btn-primary btn-big" type="submit">Send the report</button>
+      <div class="status" id="report-status" role="status"></div>
+    </form>
+    <div class="panel report-help">
+      <h2 style="font-size:26px">Good reports get fixed first</h2>
+      <ul class="steps">
+        <li><b>One problem per report.</b> Two bugs? Send two.</li>
+        <li><b>Say where.</b> Which mission, room or menu, and what you were doing.</li>
+        <li><b>Crashes:</b> in the game, open the menu and press <i>Report a bug</i>. It attaches the game's log for you.</li>
+        <li><b>Ideas welcome.</b> Big or small: a spell, a crew line, a cosy corner of the capital.</li>
+      </ul>
+      <div class="note">Reports are read by the team. Please don't include passwords or anything private.</div>
+      <div id="saved-reports"></div>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Aurelith: The Unwritten Chapter · made by itsMorphnX with Godot</span>
+    <nav aria-label="Footer"><a href="wiki.html">Wiki</a><a href="report.html">Report a bug</a><a href="download.html">Download</a><a href="credits.html">Credits</a><a class="js-discord" href="#" hidden target="_blank" rel="noopener">Discord</a></nav>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="js/site.js"></script>
+<script src="js/report.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wiki · Aurelith</title>
+<meta name="description" content="The Aurelith wiki: weapons, armour, materials, crafting, enemies, bosses and missions, generated from the game data.">
+<meta property="og:title" content="Aurelith: The Unwritten Chapter">
+<meta property="og:description" content="A grimoire-magic action RPG. Solo with an AI crew or co-op with up to four players.">
+<meta property="og:image" content="img/shots/sunset.jpg">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/theme.css" id="theme-css">
+</head>
+<body class="page-wiki">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="img/emblem.png" alt=""><span>Aurelith</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="wiki.html" aria-current="page">Wiki</a>
+      <a href="report.html">Suggestions &amp; Bugs</a>
+      <a href="download.html" class="nav-cta">Download</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap">
+  <header class="page-head">
+    <p class="kicker">The Aurelith wiki</p>
+    <h1>The Codex of Everything</h1>
+    <p>Weapons, armour, materials, crafting, enemies, bosses and missions, written straight from the game's own data. Story spoilers stay hidden until you turn them on.</p>
+  </header>
+  <div class="wiki-layout">
+    <aside class="wiki-side" aria-label="Wiki navigation">
+      <label class="sr-only" for="wiki-search">Search the wiki</label>
+      <input type="search" id="wiki-search" placeholder="Search: iron ore, forge..." autocomplete="off">
+      <label class="spoiler-toggle"><input type="checkbox" id="spoiler-toggle"> Show story spoilers</label>
+      <details class="cats-box" id="cats-box" open><summary>Categories</summary><ul class="wiki-cats" id="wiki-cats"></ul></details>
+      <p class="hint" id="wiki-gen" style="font-size:14px;opacity:.7;margin:0"></p>
+    </aside>
+    <div class="wiki-main" id="wiki-main" aria-live="polite"><p class="empty">Opening the codex...</p></div>
+  </div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Aurelith: The Unwritten Chapter · made by itsMorphnX with Godot</span>
+    <nav aria-label="Footer"><a href="wiki.html">Wiki</a><a href="report.html">Report a bug</a><a href="download.html">Download</a><a href="credits.html">Credits</a><a class="js-discord" href="#" hidden target="_blank" rel="noopener">Discord</a></nav>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="data/wiki.js"></script>
+<script src="js/site.js"></script>
+<script src="js/wiki.js"></script>
+</body>
+</html>
