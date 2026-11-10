@@ -10,7 +10,7 @@ const GITHUB_OWNER = "itsMorphnX";
 const GITHUB_REPO = "aurelith";
 const LAUNCHER_ASSET = "AurelithLauncher.zip";
 // DISCORD_INVITE: the server's invite link (e.g. "https://discord.gg/abc123"). Empty = the Join buttons hide.
-const DISCORD_INVITE = "";
+const DISCORD_INVITE = "https://discord.gg/W7NeJPQgh";
 // TRAILER_VIDEO: the gameplay trailer, a video file next to the site (e.g. "media/trailer.webm" or ".mp4") or a
 //   YouTube link. Empty = the poster shows with "coming soon". TRAILER_POSTER: the still shown before it plays.
 const TRAILER_VIDEO = "";
