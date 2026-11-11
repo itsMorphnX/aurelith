@@ -59,7 +59,7 @@ window.AURELITH_NEWS = {
    "date": "2026-11-10",
    "type": "devlog",
    "title": "Play with friends",
-   "summary": "Co-op is in: host from the main menu, share the room code, and up to three friends take crew members' places.",
+   "summary": "Co-op groundwork: room codes, chat, pings and emotes work in a test arena. Hosting from the game and friends in missions come next.",
    "body": [
     "Loot is personal: every player rolls their own drops.",
     "Enemies grow tougher for every extra real player in the group."
@@ -91,7 +91,7 @@ window.AURELITH_NEWS = {
     "Crafting at the forge, alchemy table, rune bench, cooking fire, tailor and bookbinder.",
     "Missions and dungeons on Normal, Hard and Mythic, with personal loot in five rarities.",
     "Spell trees for all seven elements, weapon mastery and element reactions.",
-    "Co-op for up to four players with a join code."
+    "Co-op test arena with room codes (missions next)."
    ]
   },
   {
