@@ -2,6 +2,28 @@
   "_note": "Devlog, news and patch notes for the website (Home) and the launcher. Newest first. type: devlog | news | patch (patch entries carry a version). The lead adds one entry every build; tools/release/make_release.py --version X --patch-notes \"line; line\" adds the patch entry for you. After editing by hand run: python tools/release/make_release.py --news-only (rewrites news.js for file:// viewing and the launcher's fallback copy).",
   "news": [
     {
+      "id": "patch-0.2.0",
+      "date": "2026-11-11",
+      "type": "patch",
+      "version": "0.2.0",
+      "title": "Aurelith 0.2.0",
+      "summary": "Fixes a crash in the first fight, adds co-op missions, a magical capital, new boss models and mouse aim.",
+      "body": [
+        "Fixed a crash about 3 seconds into the shadow duel, and a crash when quitting after a fight",
+        "Co-op: host or join from the capital, friends come into missions as their own hero and see the story scenes",
+        "The capital glows with ink canals, rune rings and spires by day, and sky lanterns on Codex Night",
+        "Chibi heroes, and cutscenes that cut to whoever is speaking",
+        "New looks for Thalgorrath, the Wreck-Shell Matriarch and Old Barkback",
+        "Ink in the Well and Stone and Sky rebuilt, and each Act 3 street has its own floor and light",
+        "The shadow duel starts with your weapon in hand and a 3-2-1 countdown",
+        "A gold trail guides you through the capital, and the ship deck no longer drops you in the water",
+        "Broken bosses repaired and short ones retuned",
+        "boss chests and level locks",
+        "Clearer fights: spells fade to a rim, merged damage numbers, stronger telegraphs",
+        "Aim attacks and spells with the mouse (Settings, Gameplay)"
+      ]
+    },
+    {
       "id": "devlog-m3-act3",
       "date": "2026-11-10",
       "type": "devlog",
