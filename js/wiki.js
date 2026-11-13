@@ -25,6 +25,9 @@
     sets: "Named six-piece sets for every archetype, with where each piece drops.", enemies: "Who you fight, what they hit with, what they drop.",
     bosses: "Phases, attacks and rewards.", missions: "Dungeons, hunts, boss fights and story missions.",
     regions: "The places of Aurelith.", crew: "Who flies with you.", loot: "Exact drop tables.", guides: "How the systems work.",
+    familiars: "The seven familiars: how they grow from Born to Unison, their X attack, special and tree.",
+    weapon_mastery: "One mastery tree per weapon: skill rank-ups, modifiers, alternate skills and passives.",
+    role_trees: "Tank, Damage and Healer trees for all seven grimoires, every node tagged by type.",
   };
 
   let spoilers = false;
