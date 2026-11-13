@@ -2,6 +2,20 @@
   "_note": "Devlog, news and patch notes for the website (Home) and the launcher. Newest first. type: devlog | news | patch (patch entries carry a version). The lead adds one entry every build; tools/release/make_release.py --version X --patch-notes \"line; line\" adds the patch entry for you. After editing by hand run: python tools/release/make_release.py --news-only (rewrites news.js for file:// viewing and the launcher's fallback copy).",
   "news": [
     {
+      "id": "patch-0.2.2",
+      "date": "2026-11-13",
+      "type": "patch",
+      "version": "0.2.2",
+      "title": "Grimbound 0.2.2",
+      "summary": "One room code for everyone: friends anywhere join with the same code, a fresh code each session (plus New code), and a worlds list to rejoin friends' worlds.",
+      "body": [
+        "One room code for everyone: home, virtual LAN or across the internet, the game finds the way",
+        "A fresh code every session, plus a New code button",
+        "Your worlds list: every world you've joined, with an online dot and Join, like a server list",
+        "Host a room is now Host my world"
+      ]
+    },
+    {
       "id": "patch-0.2.1",
       "date": "2026-11-13",
       "type": "patch",
