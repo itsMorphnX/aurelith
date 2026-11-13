@@ -5,6 +5,13 @@
   const small = document.getElementById("dl-small");
   const note = document.getElementById("dl-note");
   if (!btn) return;
+  // Launcher file names follow config.js LAUNCHER_ASSET, so the steps always match the file you get.
+  const asset = (window.AURELITH_CONFIG && window.AURELITH_CONFIG.LAUNCHER_ASSET) || "";
+  if (asset) {
+    document.querySelectorAll(".js-launcher-zip").forEach((el) => { el.textContent = asset; });
+    document.querySelectorAll(".js-launcher-exe").forEach((el) => { el.textContent = asset.replace(/\.zip$/i, ".exe"); });
+    document.querySelectorAll(".js-oldname-note").forEach((el) => { el.hidden = !/^aurelith/i.test(asset); });
+  }
   const url = window.aurelithLauncherUrl ? window.aurelithLauncherUrl() : "";
   const news = (window.AURELITH_NEWS && window.AURELITH_NEWS.news) || [];
   const latest = news.find((n) => n.type === "patch" && n.version);

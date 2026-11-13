@@ -2,6 +2,19 @@
   "_note": "Devlog, news and patch notes for the website (Home) and the launcher. Newest first. type: devlog | news | patch (patch entries carry a version). The lead adds one entry every build; tools/release/make_release.py --version X --patch-notes \"line; line\" adds the patch entry for you. After editing by hand run: python tools/release/make_release.py --news-only (rewrites news.js for file:// viewing and the launcher's fallback copy).",
   "news": [
     {
+      "id": "news-grimbound-name",
+      "date": "2026-11-12",
+      "type": "news",
+      "title": "The game is now called Grimbound",
+      "summary": "Aurelith: The Unwritten Chapter is now Grimbound: The Unwritten Chapter, with a new logo. Aurelith is still the kingdom the story is set in.",
+      "body": [
+        "New name, new logo: Grimbound: The Unwritten Chapter.",
+        "Aurelith stays: it is still the kingdom, its regions and its story.",
+        "The game and the launcher take the new name with the next update, and your saves come across by themselves.",
+        "When that update is out, get the new launcher from the Download page. Until then the game you have keeps working as it is."
+      ]
+    },
+    {
       "id": "patch-0.2.0",
       "date": "2026-11-11",
       "type": "patch",

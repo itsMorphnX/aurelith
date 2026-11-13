@@ -1,4 +1,4 @@
-// Aurelith website settings. Edit these when the site goes live (see web/README.md).
+// Grimbound website settings. Edit these when the site goes live (see web/README.md).
 //
 // REPORT_ENDPOINT: the URL of the Cloudflare Worker that forwards reports to Discord
 //   (web/report-worker/README.md). Leave it "" and the Suggestions & Bugs form saves reports in the

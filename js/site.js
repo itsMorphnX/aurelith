@@ -1,4 +1,4 @@
-// Aurelith site: shared page behaviour (menu, gallery, lightbox, news, download links). No libraries.
+// Grimbound site: shared page behaviour (menu, gallery, lightbox, news, download links). No libraries.
 (function () {
   "use strict";
   const cfg = window.AURELITH_CONFIG || {};
@@ -43,7 +43,7 @@
       const frame = tbox.querySelector(".trailer-frame");
       const yt = v.match(/(?:youtu\.be\/|v=)([\w-]{6,})/);
       frame.innerHTML = yt
-        ? `<iframe src="https://www.youtube-nocookie.com/embed/${yt[1]}?autoplay=1" title="Aurelith gameplay trailer" allow="autoplay; fullscreen" allowfullscreen></iframe>`
+        ? `<iframe src="https://www.youtube-nocookie.com/embed/${yt[1]}?autoplay=1" title="Grimbound gameplay trailer" allow="autoplay; fullscreen" allowfullscreen></iframe>`
         : `<video src="${v}" poster="${poster.src}" controls autoplay playsinline></video>`;
     });
   }

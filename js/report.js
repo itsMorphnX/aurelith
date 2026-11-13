@@ -35,7 +35,7 @@
     if (!list.length) { savedEl.innerHTML = ""; return; }
     savedEl.innerHTML = `<p style="margin-top:16px"><b>${list.length}</b> report${list.length > 1 ? "s" : ""} waiting in this browser.
       <a href="#" id="dl-saved">Save them as a file</a></p>`;
-    document.getElementById("dl-saved").addEventListener("click", (e) => { e.preventDefault(); download(list, "aurelith-reports.json"); });
+    document.getElementById("dl-saved").addEventListener("click", (e) => { e.preventDefault(); download(list, "grimbound-reports.json"); });
   }
   showSaved();
 
@@ -53,7 +53,7 @@
     if (!cfg.REPORT_ENDPOINT) {
       keep(rep);
       say("warn", "Reporting isn't connected yet, so your report is saved in this browser for now. You can <a href='#' id='dl-one'>save it as a file</a> and send it to the team.");
-      document.getElementById("dl-one").addEventListener("click", (e) => { e.preventDefault(); download(rep, "aurelith-report.json"); });
+      document.getElementById("dl-one").addEventListener("click", (e) => { e.preventDefault(); download(rep, "grimbound-report.json"); });
       showSaved();
       return;
     }

@@ -1,4 +1,4 @@
-/* Aurelith site: STRUCTURE only (layout, spacing, phone sizes, components).
+/* Grimbound site: STRUCTURE only (layout, spacing, phone sizes, components).
    Every colour, texture, font choice and decorative touch lives in the theme (css/theme.css imports one of
    css/themes/*.css). Swapping the look = changing that one import line. */
 
@@ -209,6 +209,9 @@ p { margin: 0 0 1em; }
   .news-grid { grid-template-columns: 1fr; }
   .wiki-entry, .panel { padding: 20px 16px; }
   .fact b { font-size: 28px; }
+  .grid-2 > * { min-width: 0; }
+  .spec { font-size: 15px; }
+  .spec th, .spec td { padding: 7px 5px; overflow-wrap: anywhere; }
 }
 
 /* ---------------------------------------------------------------- build planner */
