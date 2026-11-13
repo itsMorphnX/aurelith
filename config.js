@@ -8,7 +8,7 @@
 const REPORT_ENDPOINT = "";
 const GITHUB_OWNER = "itsMorphnX";
 const GITHUB_REPO = "aurelith";
-const LAUNCHER_ASSET = "AurelithLauncher.zip";
+const LAUNCHER_ASSET = "GrimboundLauncher.zip";
 // DISCORD_INVITE: the server's invite link (e.g. "https://discord.gg/abc123"). Empty = the Join buttons hide.
 const DISCORD_INVITE = "https://discord.gg/W7NeJPQgh";
 // TRAILER_VIDEO: the gameplay trailer, a video file next to the site (e.g. "media/trailer.webm" or ".mp4") or a

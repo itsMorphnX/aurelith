@@ -3,6 +3,28 @@ window.AURELITH_NEWS = {
  "_note": "Devlog, news and patch notes for the website (Home) and the launcher. Newest first. type: devlog | news | patch (patch entries carry a version). The lead adds one entry every build; tools/release/make_release.py --version X --patch-notes \"line; line\" adds the patch entry for you. After editing by hand run: python tools/release/make_release.py --news-only (rewrites news.js for file:// viewing and the launcher's fallback copy).",
  "news": [
   {
+   "id": "patch-0.2.1",
+   "date": "2026-11-13",
+   "type": "patch",
+   "version": "0.2.1",
+   "title": "Grimbound 0.2.1",
+   "summary": "The game is now Grimbound. Playtest build with a walk-through tutorial, role trees, real familiars, weapon mastery, the sky-ship home and black-ink bosses. Get the new launcher from the Download page.",
+   "body": [
+    "The game is now called Grimbound (Aurelith is still the kingdom)",
+    "saves carry over",
+    "Older launchers can't install this version: get GrimboundLauncher from the Download page",
+    "Walk-through tutorial woven into the story (skip, replay, or turn it off in Settings)",
+    "New interface with Tank / Damage / Healer trees for every grimoire and coloured skill-type tags",
+    "New opening: the soul trial as playable visions, choose your page and your grimoire's binding",
+    "Real familiars: X attack, special at 5, sovereign summon at 30, Unison at 50, own tree",
+    "Weapon mastery trees with alternate skills",
+    "Sky-ship home: below decks, decorating, trophy wall",
+    "Waystones, vault-houses and notice boards in every town",
+    "Bosses in black ink on ground from their own story, with a new fight camera",
+    "New scenery in every region and mission"
+   ]
+  },
+  {
    "id": "news-grimbound-name",
    "date": "2026-11-12",
    "type": "news",
