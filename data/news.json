@@ -2,6 +2,19 @@
   "_note": "Devlog, news and patch notes for the website (Home) and the launcher. Newest first. type: devlog | news | patch (patch entries carry a version). The lead adds one entry every build; tools/release/make_release.py --version X --patch-notes \"line; line\" adds the patch entry for you. After editing by hand run: python tools/release/make_release.py --news-only (rewrites news.js for file:// viewing and the launcher's fallback copy).",
   "news": [
     {
+      "id": "patch-0.2.5",
+      "date": "2026-11-13",
+      "type": "patch",
+      "version": "0.2.5",
+      "title": "Grimbound 0.2.5",
+      "summary": "Every skill tree now has painted icons: weapon skills, weapon mastery trees, familiar trees and the Tank/Damage/Healer tabs.",
+      "body": [
+        "New hand-made icons for every weapon skill and alternate",
+        "Weapon mastery trees and familiar trees get painted icons",
+        "Tank, Damage and Healer tabs get their own emblems"
+      ]
+    },
+    {
       "id": "patch-0.2.4",
       "date": "2026-11-13",
       "type": "patch",
