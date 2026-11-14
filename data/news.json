@@ -2,6 +2,18 @@
   "_note": "Devlog, news and patch notes for the website (Home) and the launcher. Newest first. type: devlog | news | patch (patch entries carry a version). The lead adds one entry every build; tools/release/make_release.py --version X --patch-notes \"line; line\" adds the patch entry for you. After editing by hand run: python tools/release/make_release.py --news-only (rewrites news.js for file:// viewing and the launcher's fallback copy).",
   "news": [
     {
+      "id": "patch-0.2.4",
+      "date": "2026-11-13",
+      "type": "patch",
+      "version": "0.2.4",
+      "title": "Grimbound 0.2.4",
+      "summary": "New painted skill icons everywhere, and friends now see your named weapon in co-op.",
+      "body": [
+        "New painted skill icons for every spell, role skill, signature, weapon skill and familiar move, animated on the HUD and in the skill trees",
+        "In co-op, friends now see your named weapon with its own look"
+      ]
+    },
+    {
       "id": "patch-0.2.3",
       "date": "2026-11-13",
       "type": "patch",
