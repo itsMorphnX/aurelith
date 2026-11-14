@@ -2,6 +2,22 @@
   "_note": "Devlog, news and patch notes for the website (Home) and the launcher. Newest first. type: devlog | news | patch (patch entries carry a version). The lead adds one entry every build; tools/release/make_release.py --version X --patch-notes \"line; line\" adds the patch entry for you. After editing by hand run: python tools/release/make_release.py --news-only (rewrites news.js for file:// viewing and the launcher's fallback copy).",
   "news": [
     {
+      "id": "patch-0.2.6",
+      "date": "2026-11-13",
+      "type": "patch",
+      "version": "0.2.6",
+      "title": "Grimbound 0.2.6",
+      "summary": "Playtest fixes: familiars now walk, run, fly and swim instead of gliding; the familiar special, summon and Unison hit with real weight (and the special hits harder); co-op bosses no longer get far too much health, and Vorhast's Name-Eating no longer gives friends AI jobs.",
+      "body": [
+        "Familiars walk, run, gallop, plod, flap and swim with their speed instead of gliding (yours and your friends')",
+        "Hold-X familiar special: wind-up, big element burst, hit-stop, screen shake (follows your setting), heavier sound and big numbers",
+        "about 1.7x stronger",
+        "Lv30 summon and Lv50 Unison land with a slam",
+        "Co-op: bosses get +12% health per extra player (was +45%), so 2-player fights are much shorter",
+        "Vorhast, the Name-Eater: friends are no longer given AI crew jobs, so eaten names no longer heal him while nobody can read them back"
+      ]
+    },
+    {
       "id": "patch-0.2.5",
       "date": "2026-11-13",
       "type": "patch",
