@@ -2,6 +2,22 @@
   "_note": "Devlog, news and patch notes for the website (Home) and the launcher. Newest first. type: devlog | news | patch (patch entries carry a version). The lead adds one entry every build; tools/release/make_release.py --version X --patch-notes \"line; line\" adds the patch entry for you. After editing by hand run: python tools/release/make_release.py --news-only (rewrites news.js for file:// viewing and the launcher's fallback copy).",
   "news": [
     {
+      "id": "patch-0.2.3",
+      "date": "2026-11-13",
+      "type": "patch",
+      "version": "0.2.3",
+      "title": "Grimbound 0.2.3",
+      "summary": "New item pictures in a New World/WoW style with rarity frames and glows, named gear in teal, and living animated skill and potion icons.",
+      "body": [
+        "New item pictures for every weapon, armour piece, potion and material, with rarity frames",
+        "Rare, Epic and Legendary items glow",
+        "named gear is teal",
+        "Weapon pictures match the weapon in your hand, named weapons included",
+        "Skills, spells, familiar moves, potions and materials have living animated icons, with a ready pulse when a skill comes off cooldown",
+        "Settings > Gameplay > Animated item icons turns the animation off"
+      ]
+    },
+    {
       "id": "patch-0.2.2",
       "date": "2026-11-13",
       "type": "patch",
