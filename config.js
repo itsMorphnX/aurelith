@@ -7,7 +7,7 @@
 //   https://github.com/<owner>/<repo>/releases/latest/download/<LAUNCHER_ASSET>
 const REPORT_ENDPOINT = "";
 const GITHUB_OWNER = "itsMorphnX";
-const GITHUB_REPO = "aurelith";
+const GITHUB_REPO = "grimbound";
 const LAUNCHER_ASSET = "GrimboundLauncher.zip";
 // DISCORD_INVITE: the server's invite link (e.g. "https://discord.gg/abc123"). Empty = the Join buttons hide.
 const DISCORD_INVITE = "https://discord.gg/W7NeJPQgh";
